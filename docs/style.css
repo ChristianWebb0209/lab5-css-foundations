@@ -80,3 +80,25 @@ input {
     align-items: center;
     margin-top: 1rem;
 }
+
+.sign-in-button {
+    background: var(--primary-color);
+    color: var(--text-color-bright);
+    border: none;
+
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.sign-in-button:hover {
+    background: #357abd;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    /* this to rmeove the little line below it */
+    text-decoration: none;
+}
