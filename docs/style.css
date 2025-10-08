@@ -1,7 +1,21 @@
+:root {
+    --primary-color: #4a90e2;
+    --text-color: #333;
+    --text-color-bright: #ffffff;
+    --background-color: #f1f1f1;
+
+    --border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: sans-serif;
     padding: 20px;
-    background: #eeeeeead;
+    background: var(--background-color);
 
     display: flex;
     justify-content: center;
@@ -22,7 +36,7 @@ input {
     padding: 12px;
 
     border: solid 1px #eee;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
 }
 
 
@@ -40,7 +54,7 @@ input {
 }
 
 .info-section {
-    background: #4099ff;
+    background: var(--primary-color);
     padding: 3rem;
 
     color: white;
