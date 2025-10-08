@@ -20,6 +20,49 @@ label {
 input {
     width: 100%;
     padding: 12px;
+
     border: solid 1px #eee;
-    border-radius: 4px;
+    border-radius: 8px;
+}
+
+
+.main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50rem;
+
+    background: white;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 10px #0000001e;
+    /* without this child elements spill over and make the corners unrounded */
+    overflow: hidden;
+}
+
+.info-section {
+    background: #4099ff;
+    padding: 3rem;
+
+    color: white;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-section {
+    padding: 3rem;
+}
+
+.form-area {
+    margin-bottom: 2rem;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
 }
